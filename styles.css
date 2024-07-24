@@ -1,0 +1,222 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #8698ff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: solid rgb(0, 55, 207) 0.1rem;
+    border-bottom: solid rgb(0, 55, 207) 0.1rem;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 1rem;
+}
+
+.navbar-right .profile-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.navbar-right .profile-link:hover {
+    text-decoration: underline;
+}
+.std-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.std-heading > h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(7, 0fr);
+    gap: 1rem; /* Reduced gap between boxes */
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 2px;
+    margin-top: 2%;
+}
+
+.dashboard-box {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(91, 91, 91, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s;
+    width: 100px; /* Reduced width */
+    height: 60px;  /* Reduced height */
+}
+.dash-section{
+    box-sizing: border-box;
+    border: solid rgb(0, 84, 209) 0.4rem;
+    height: 100vh;
+    
+}
+.dashboard-box:hover {
+    transform: scale(1.05);
+}
+
+.dashboard-box h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+#box1{
+    background-color: #8698ff;
+}
+#box2{
+    background-color: #86ffdb;
+
+
+}
+#box3{
+    background-color: #ffc086;
+
+}
+#box4{
+    background-color: #ff868e;
+
+}
+
+.details-container {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    margin-top: -1.5rem;
+}
+
+@media (max-width: 650px) {
+    
+    .dash-section{
+        box-sizing: border-box;
+        border: solid rgb(0, 84, 209) 0.4rem;
+        border-left: solid rgb(0, 84, 209) 0.2rem;
+        border-right: solid rgb(0, 84, 209) 0.2rem;
+        height: 100vh;
+        
+    }
+    .navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        margin-left: -5rem;
+        font-weight: bold;
+    }
+    .std-heading > h2 {
+        font-size: 1.1rem;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px; /* Adjusted for small screens */
+    }
+
+    .dashboard-box {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        width: 100px;
+        height: 50px;
+        max-height: 6vh;
+    }
+
+    .details-container {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        grid-template-rows: repeat(7, 0fr);
+        gap: 1rem; /* Reduced gap between boxes */
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        padding: 2px;
+        margin-top: 4rem;
+    }
+    
+    .dashboard-box {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 2px rgba(91, 91, 91, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        color: #333;
+        transition: transform 0.3s;
+        width: 120px; /* Reduced width */
+        height: 80px;  /* Reduced height */
+    }
+    
+    .dashboard-box:hover {
+        transform: scale(1.05);
+    }
+    
+    .dashboard-box h3 {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+        
+    .details-container {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 0rem rgba(91, 91, 91, 0.2);
+        border: solid #424344 0.1rem;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 600px;
+        margin-top: -3rem;
+    }
+}
